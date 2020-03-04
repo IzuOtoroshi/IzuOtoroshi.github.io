@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.topnav {
+    background-color: #00183E;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a.home:hover {
+    background-color: grey;
+    color: white;
+}
+.topnav a.about:hover {
+    background-color: rgb(207, 57, 46);
+    color: rgb(73, 56, 56);
+}
+.topnav a.projects:hover {
+    background-color: #FAA622;
+    color: #FFE52C;
+}
+.topnav a.contact:hover {
+    background-color: #D10005;
+    color: black;
+}
+.topnav a.active {
+    background-color: #7AD6FD;
+    color: #00183E;
+}
+@font-face {
+    font-family: Digital;
+    src: url(bm_space.ttf);
+}
+@font-face {
+    font-family: Earwig;
+    src: url(earwig_factory_rg.ttf);
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7AD6FD;
+    color: white;
+    text-align: center;
+}
